@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"
+    android:orientation="horizontal"
+    android:padding="10sp"
+    android:weightSum="1.0">
+
+    <TextView
+        android:id="@+id/txtProfitname"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".4"
+        android:gravity="center"
+        android:textColor="@color/black"
+        tools:text="INSTRUMENT REPAIR/MAINTENANCE" />
+
+    <TextView
+        android:id="@+id/txtAmount_type"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        tools:text="40.0" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".4"
+        android:gravity="center"
+        android:textColor="@color/black"
+        tools:text="21st January, 2017" />
+
+    <TextView
+        android:text="+"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttype"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>

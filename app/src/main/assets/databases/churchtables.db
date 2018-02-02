@@ -1,0 +1,8 @@
+CREATE TABLE income 
+(
+ id integer NOT NULL IDENTITY(1,1),
+ income_type varchar(255) NOT NULL,
+ amount text NOT NULL,
+ entry_date datetime NOT NULL,
+ PRIMARY KEY (id)
+)

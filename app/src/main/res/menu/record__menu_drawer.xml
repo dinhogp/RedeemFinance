@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_credit"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Credit" />
+        <item
+            android:id="@+id/nav_debit"
+            android:icon="@android:drawable/presence_busy"
+            android:title="Debit" />
+        <item
+            android:id="@+id/nav_full"
+            android:icon="?android:attr/actionModePasteDrawable"
+            android:title="Full" />
+
+    </group>
+
+
+
+</menu>

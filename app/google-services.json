@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "462952531765",
+    "firebase_url": "https://dinho-p.firebaseio.com",
+    "project_id": "dinho-p",
+    "storage_bucket": "dinho-p.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462952531765:android:cba2c5e97c8bc1d3",
+        "android_client_info": {
+          "package_name": "com.obinna.redeemfinance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462952531765-ub1aea484fd4r7s0pi7mjq1er90hksqm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.obinna.redeemfinance",
+            "certificate_hash": "e2884de7a18aa0d0eee53ab39fad07b4389f3392"
+          }
+        },
+        {
+          "client_id": "462952531765-4t8e5ve54g76slc1vsqs4bcgkfld8tb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSMSHiaYARx7XHDZqJYU1phV0DhLxl3cU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462952531765-4t8e5ve54g76slc1vsqs4bcgkfld8tb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

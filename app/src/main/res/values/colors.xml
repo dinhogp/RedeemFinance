@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02115f</color>
+    <color name="colorPrimaryDark">#d8282727</color>
+    <color name="colorAccent">#015117</color>
+    <color name="gold">#fbbd76</color>
+    <color name="black">#000000</color>
+    <color name="dark_green">#033908</color>
+    <color name="orange">#d96404</color>
+    <color name="white">#ffffff</color>
+    <color name="splashcol">#323233</color>
+    <color name="profit">#d8a4f5b3</color>
+    <color name="debit">#bcf57779</color>
+    <color name="darkred">#fb780206</color>
+    <color name="fullrecord">#b17b74f2</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="prof">#add4c2</color>
+    <color name="deb">#3c1719</color>
+    <color name="full">#035c5c</color>
+    <color name="rt">#9d1d23</color>
+    <color name="py">#5b5667</color>
+    <color name="pl">#91882c</color>
+
+</resources>

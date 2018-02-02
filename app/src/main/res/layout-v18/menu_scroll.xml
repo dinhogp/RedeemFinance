@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+
+    tools:context="com.obinna.redeemfinance.Scroll_menu">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/credit_content"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:background="@mipmap/profit_record_3"
+            android:orientation="vertical"
+
+            android:layout_weight="0.5"
+
+            android:layout_height="250sp">
+
+            <Button
+                  android:id="@+id/Bprof"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+                  android:layout_gravity="bottom|center"
+                  android:onClick="on_CreditClick"
+                  android:text="PROFIT \n RECORD"
+                  android:layout_alignParentBottom="true"
+                  android:layout_centerHorizontal="true"
+                android:background="@color/prof" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/debit_content"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:background="@mipmap/debit_record_2"
+            android:orientation="vertical"
+
+            android:layout_weight="0.5"
+            >
+
+            <Button
+                android:id="@+id/Bdebit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?metaButtonBarStyle"
+                android:layout_gravity="bottom|center"
+                android:onClick="on_DebitClick"
+                android:text="DEBIT \n RECORD"
+                android:background="@color/deb"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/full_content"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:background="@mipmap/full_record"
+            android:orientation="vertical"
+
+            android:layout_weight="0.375"
+            >
+            <Button
+                android:id="@+id/Bfull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="bottom|center"
+                android:onClick="on_FullClick"
+                android:text="GENERAL \n RECORD"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/full"
+                android:textColor="@color/rt" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/month_content"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:background="@mipmap/profit_record"
+            android:orientation="vertical"
+
+            android:layout_weight="0.375"
+            >
+            <Button
+                android:id="@+id/Bmonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="bottom|center"
+                android:onClick="on_MonthClick"
+                android:text="MONTHLY \n RECORD"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/py"
+                android:textColor="@color/pl" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
