@@ -21,16 +21,6 @@ public class Profits implements Serializable {
         this.type=type;
     }
 
-
-
-
-    /*
-        public int getid() {
-            return this.id;
-        }
-        public void setid(int id) {
-            this.id = id;
-        } */
         public String getprofitname() {
             return profitname;
         }
@@ -66,20 +56,6 @@ public class Profits implements Serializable {
         this.type = type;
     }
 
-        /*        @Override
-    *     public String toString() {
-                  return income_type + " " + profitname;
-              }
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
 
-        Profits contact = (Profits) o;
-
-        //if (!phone.equals(contact.phone)) return false;
-
-        return true;
-    }*/
 
 }

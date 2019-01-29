@@ -9,7 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
 
-    android:background="#d8a4f5b3">
+
+    >
 
 
     <TextView
@@ -57,12 +58,12 @@
     <ListView
         android:id="@+id/CreditView"
         android:layout_width="match_parent"
-        android:layout_height="355sp"
-        android:layout_above="@+id/textView18"
-        android:layout_alignParentLeft="true"
+        android:layout_height="300sp"
+        android:layout_below="@+id/radioProfit"
+        android:layout_above="@+id/debit_display"
         android:layout_alignParentStart="true"
         android:background="#ffffff"
-        android:layout_below="@+id/bView" />
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:layout_height="wrap_content"
@@ -74,7 +75,7 @@
         android:onClick="onViewClick"
         android:layout_width="60sp"
         android:background="@android:drawable/ic_menu_view"
-        android:backgroundTint="#033908" />
+        android:backgroundTint="#02115f" />
 
     <TextView
         android:text="Total Debit: "
@@ -118,21 +119,7 @@
         android:layout_toLeftOf="@+id/credit_display"
         android:layout_toStartOf="@+id/credit_display" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:text="PDF"
-        android:layout_width="55sp"
-        android:layout_height="wrap_content"
-        android:id="@+id/bPDF"
-        android:onClick="onPDFClick"
-        android:layout_gravity="end|bottom"
-        app:backgroundTint="@color/dark_green"
-        app:srcCompat="@android:drawable/ic_input_add"
 
-        android:layout_above="@+id/textView21"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="6sp"
-        android:layout_marginStart="6sp" />
 
     <EditText
         android:layout_height="wrap_content"
@@ -158,6 +145,31 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/fromDATE"
         android:layout_toEndOf="@+id/fromDATE" />
+
+    <RadioButton
+        android:id="@+id/radioProfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/CreditView"
+        android:layout_marginTop="70dp"
+        android:text="Credit" />
+
+    <RadioButton
+        android:id="@+id/radioDebit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioProfit"
+        android:layout_centerHorizontal="true"
+        android:text="Debit" />
+
+    <RadioButton
+        android:id="@+id/radioBoth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/credit_display"
+        android:layout_alignTop="@+id/radioProfit"
+        android:text="Both" />
 
 
 </RelativeLayout>

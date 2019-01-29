@@ -15,6 +15,12 @@
         <item name="android:textColorPrimary">@color/white</item>
     </style>
 
+    <style name="HomeTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+    </style>
+
     <style name="ProfitTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
 

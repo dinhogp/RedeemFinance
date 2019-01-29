@@ -1,80 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
-    android:background="@mipmap/redeem_back"
-    >
+    android:background="@color/ash"
+    android:orientation="vertical"
+    android:weightSum="1.0">
 
-    <EditText
-        android:id="@+id/dinhosInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/textView"
-        android:layout_marginTop="67sp"
-        android:contentDescription="amount"
-        android:ems="10"
-        android:hint="Amount"
-        android:inputType="numberDecimal" />
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        card_view:cardBackgroundColor="#ffff"
+        card_view:cardElevation="5dp"
+        android:layout_weight=".5">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/dinhosInput"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="42sp"
-        android:text="INPUT AMOUNT:"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/Badd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/dinhosInput"
-        android:onClick="onAddClick"
-        android:text="ADD"
-        android:background="@color/colorAccent"
-        android:textColor="@color/white" />
+            <EditText
+                android:id="@+id/dinhosInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/textView"
+                android:layout_marginTop="67sp"
+                android:contentDescription="amount"
+                android:ems="10"
+                android:hint="Amount"
+                android:inputType="numberDecimal" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="200sp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/dinhosInput"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/dinhosInput" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/dinhosInput"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="42sp"
+                android:text="INPUT AMOUNT:"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:text="DESCRIPTION"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+            <Button
+                android:id="@+id/Badd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp"
+                android:background="@color/colorAccent"
+                android:onClick="onAddClick"
+                android:text="ADD"
+                android:textColor="@color/white" />
 
-    <EditText
-        android:id="@+id/txtdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/spinner"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignStart="@+id/spinner"
-        android:layout_below="@+id/spinner"
-        android:ems="10"
-        android:hint="Date"
-        android:inputType="date"
-        android:textSize="20sp" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/dinhosInput"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/dinhosInput" />
 
-</RelativeLayout>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="DESCRIPTION"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <EditText
+                android:id="@+id/txtdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinner"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/spinner"
+                android:layout_below="@+id/spinner"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="date"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        card_view:cardBackgroundColor="#ffff"
+        card_view:cardElevation="5dp"
+        android:layout_weight=".5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="67sp"
+                android:id="@+id/debitInput"
+                android:contentDescription="amount"
+                android:layout_alignRight="@+id/textView"
+                android:layout_alignEnd="@+id/textView"
+                android:hint="amount"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:id="@+id/Bdebit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp"
+                android:background="@color/darkred"
+                android:onClick="debitButtonClicked"
+                android:text="DEBIT"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/debitspinner"
+                android:layout_alignTop="@+id/debitInput"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/debitInput" />
+
+            <TextView
+                android:text="DESCRIPTION"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textView3"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/debitText"
+                android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+            <TextView
+                android:text="INPUT AMOUNT:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:layout_above="@+id/debitspinner"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/txtdate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/debitspinner"
+                android:layout_below="@+id/debitInput"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="date"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

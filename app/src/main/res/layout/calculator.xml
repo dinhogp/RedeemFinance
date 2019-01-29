@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/currency_back"
+    android:background="@color/white"
+
     >
 
     <TextView
@@ -176,7 +177,10 @@
         android:layout_alignRight="@+id/one"
         android:layout_alignEnd="@+id/one"
         android:onClick="onCalcClick"
-        android:id="@+id/Bcalc" />
+        android:id="@+id/Bcalc"
+        android:backgroundTint="@color/myblue"
+
+        android:textColor="#ffff"/>
 
     <TextView
         android:text="TOTAL:"
@@ -188,7 +192,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textSize="22sp"
-        android:textColor="#000000" />
+         />
 
     <TextView
         android:text="GHc"

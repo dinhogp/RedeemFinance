@@ -117,7 +117,7 @@ public class LogIn extends Activity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
              if(dataSnapshot.hasChild(user_id)){
-                 Intent mainIntent=new Intent(LogIn.this,MyMenu.class);
+                 Intent mainIntent=new Intent(LogIn.this,HomePage.class);
 
                  mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                  startActivity(mainIntent);
